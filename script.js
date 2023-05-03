@@ -90,7 +90,7 @@ navLinks.forEach((link) => {
   link.addEventListener("click", (event) => {
     event.preventDefault();
     const target = document.querySelector(link.hash);
-    const navHeight = document.querySelector("header").offsetHeight + 20;
+    const navHeight = document.querySelector("header").offsetHeight + 40;
     const offset =
       target.getBoundingClientRect().top + window.pageYOffset - navHeight;
     window.scrollTo({ top: offset, behavior: "smooth" });
