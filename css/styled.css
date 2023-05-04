@@ -212,6 +212,11 @@ h2 {
 .a_header_nav {
   color: #f1dc7e;
   font-size: 10px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.a_header_nav:hover {
+  color: white;
 }
 
 /** Elemento main **/
@@ -254,6 +259,15 @@ main {
 
 /** Seccion de Conocimientos Certificados **/
 
+#conocimientos {
+  background-color: #29292b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  margin-top: 3px;
+}
+
 .div_conocimientos {
   display: flex;
   flex-direction: column;
@@ -265,7 +279,7 @@ main {
 .h3_conocimientos {
   font-size: 35px;
   color: white;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 30px 10px 0px;
 }
 
 .div_conocimientos p {
@@ -294,7 +308,7 @@ main {
   border-radius: 1px;
   padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px 10px 0px 10px;
+  margin: 10px 10px 60px 10px;
   width: 280px;
   height: 227px;
   display: flex;
@@ -349,56 +363,78 @@ i {
   padding: 0;
 }
 
-/* Seccion de Proyectos */
+/** Seccion de Proyectos **/
+
+#proyectos {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .proyectos {
+  margin-top: 40px;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.proyectos li {
-  flex-basis: 33.33%;
-  margin-bottom: 20px;
-  /* position: relative; */
+.a_proyectos {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
 }
 
-/* .proyectos .contenedor {
+.contenedor {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .proyectos li {
+  flex-basis: 33.33%;
+  margin-bottom: 20px;
 } */
 
 .proyectos img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 400px;
+  margin: 20px 0px 20px 0;
 }
 
-.proyectos .overlay {
+/* .proyectos .overlay {
   margin-left: 20px;
   margin-top: 50px;
-}
+} */
 
 .proyectos .overlay h3 {
   margin: 0;
-  color: black;
+  color: white;
+  text-align: center;
+  margin: 0px 0px 10px 0;
 }
 
 .proyectos .overlay p {
   margin: 0;
-  color: black;
+  color: white;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
 }
 
-.proyectos a:hover img {
-  transform: scale(1.1);
-}
-
-.proyectos a:hover .overlay {
+/* .proyectos a:hover .overlay {
   opacity: 1;
+} */
+
+/** Seccion formulario **/
+
+#contacto {
+  background-color: #29292b;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-/* Estilos para el formulario */
 #contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -406,7 +442,7 @@ i {
   flex-direction: column;
 }
 
-/* Estilos para los campos del formulario */
+/*? Estilos para los campos del formulario */
 
 .sec_form {
   margin-top: 100px;
@@ -419,6 +455,7 @@ i {
 label {
   display: block;
   margin-bottom: 0.5rem;
+  color: white;
 }
 
 input[type="text"],
@@ -438,21 +475,22 @@ textarea {
 
 /* Estilos para el botón de enviar */
 button[type="submit"] {
-  background-color: #214265;
-  color: #fff;
+  background-color: #f1dc7e;
+  color: #29292b;
   padding: 0.5rem 1rem;
   border: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
   cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #214265;
+  background-color: #f1dc7e;
 }
+
+/** Seccion Foote **/
 
 footer {
   width: 100%;
-  height: 300px;
-  margin-top: 150px;
-  background-color: #baaeb0;
+  height: 200px;
 }

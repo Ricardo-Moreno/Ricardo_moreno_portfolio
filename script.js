@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+function init() {
   // Obtener el enlace "Inicio"
   const inicioLink = document.querySelector("#inicio-link");
 
@@ -52,23 +52,26 @@ document.addEventListener("DOMContentLoaded", function () {
       nav.classList.remove("nav");
     }
   });
-});
 
-const links = document.querySelectorAll(".proyectos a,.a_card");
+  const links = document.querySelectorAll(".proyectos a,.a_card");
 
-links.forEach((link) => {
-  link.setAttribute("target", "_blank");
-});
-
-const navLinks = document.querySelectorAll("nav a");
-
-navLinks.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    const target = document.querySelector(link.hash);
-    const navHeight = document.querySelector("header").offsetHeight + 40;
-    const offset =
-      target.getBoundingClientRect().top + window.pageYOffset - navHeight;
-    window.scrollTo({ top: offset, behavior: "smooth" });
+  links.forEach((link) => {
+    link.setAttribute("target", "_blank");
   });
-});
+
+  const navLinks = document.querySelectorAll("nav a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const target = document.querySelector(link.hash);
+      const navHeight = document.querySelector("header").offsetHeight + 40;
+      const offset =
+        target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+      window.scrollTo({ top: offset, behavior: "smooth" });
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", init);
+window.addEventListener("load", init);
