@@ -13,7 +13,7 @@
 <body>
   <header>
     <nav>
-      <img class="logo_r" src="/img/logo_r.png" alt="">
+      <img class="logo_r" src="/img/logo.png" alt="">
       <ul class="ul_nav">
         <li><a id="inicio-link" class="a_nav" href="#inicio">Inicio</a></li>
         <li><a class="a_nav" href="#conocimientos">Conocimientos</a></li>
@@ -63,27 +63,26 @@
             cursando Desarrollo Full Stack en Coderhouse. Pero como todo buen
             apasionado🚀...
           </p>
-          <h2><a class="a_header_nav" href="">Learn more.</a></h2>
+          <h2><a class="a_header_nav" href="#inicio">Learn more.</a></h2>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section >
+    <section class="contenedor-seccion_sobre_mi">
       <section class="sec_h2_cono">
-        <h3 class="h2_cono">Sobre Mi</h2>
+        <h2 class="h2_cono"></h2>
       </section>
       <section id="inicio">
-        <section class="sec_foto">
-          <div class="div_carta">
-            <h3>Sobre Mi</h3>
+        <section class="sec_sobre_mi">
+          <div class="div_sobre_mi">
             <p>
-              ¡HOLA!¡Soy estudiante apasionado en el desarrollo web! 😃, Actualmente estoy
+              ¡Soy estudiante apasionado en el desarrollo web! 😃, Actualmente estoy
               cursando Desarrollo Full Stack en Coderhouse. Pero como todo buen
               apasionado🚀 no dejo de afianzar conocimiento con cursos y prácticas
               que pueda encontrar en distintas plataformas.
             </p>
-            <p >
+            <p>
               Con una meta clara en desarrollar mi carrera profesional formando
               parte de una empresa que me permita aplicar todo lo aprendido hasta
               ahora y seguir creciendo tanto personal como profesionalmente para
@@ -99,8 +98,14 @@
 
     <section id="conocimientos">
       <section class="sec_h2_cono">
-        <h3 class="h2_cono">CONOCIMIENTOS</h2>
+        <h2 class="h2_cono">CONOCIMIENTOS</h2>
       </section>
+      <div class="div_conocimientos">
+        <h3 class="h3_conocimientos">What I Am Great At</h3>
+        <p>A través de la práctica diaria y la resolución de problemas, los autodidactas pueden alcanzar niveles
+          sorprendentes de conocimiento y habilidad en programación, lo que los convierte en candidatos muy atractivos
+          para los empleadores en el mercado laboral.</p>
+      </div>
       <section class="sec_card">
         <div class="card">
           <a class="a_card" href="./img/certificado_javascript.png">
@@ -159,21 +164,25 @@
           <i class="fab fa-css3-alt"></i>
         </div>
         <div class="card">
-          <h4>Node.JS</h4>
-          <p>
-          <ul class="ul_certificados">
-            <li>Instituto - CoderHouse </li>
-            <li>Duracion - Cursando</li>
-            <li>Finaliza - 10/10/2022</li>
-          </ul>
-          </p>
+          <a class="a_card" href="">
+            <h4>Node.JS</h4>
+            <p>
+              <ul class="ul_certificados">
+                <li>Instituto - CoderHouse </li>
+                <li>Duracion - Cursando</li>
+                <li>Finaliza - 10/10/2022</li>
+              </ul>
+            </p>
+          </a>
           <i class="fab fa-node"></i>
         </div>
         <div class="card">
-          <h4>Python</h4>
-          <p>
-            Conocimientos adquiridos de forma autodidacta, en diferentes plataformas
-          </p>
+          <a class="a_card" href="">
+            <h4>Python</h4>
+            <p>
+              Conocimientos adquiridos de forma autodidacta, en diferentes plataformas
+            </p>
+          </a>
           <i class="fab fa-python"></i>
         </div>
       </section>
@@ -183,7 +192,7 @@
 
     <section id="proyectos">
       <section class="sec_h2_cono">
-        <h3 class="h2_cono">PROYECTOS</h2>
+        <h2 class="h2_cono">PROYECTOS</h2>
       </section>
       <section>
         <ul class="proyectos">
@@ -219,7 +228,7 @@
 
     <section id="contacto">
       <section class="sec_h2_cono">
-        <h3 class="h2_cono">Contactame</h2>
+        <h2 class="h2_cono">Contactame</h2>
       </section>
       <section class="sec_form">
         <form id="contact-form" action="https://formsubmit.co/380d5b3091b793d923e94952f30cd56e" method="POST" />
