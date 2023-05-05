@@ -1,6 +1,8 @@
 function init() {
   // Obtener el enlace "Inicio"
-  const inicioLink = document.querySelector("#inicio-link");
+  const inicioLink = document.querySelector(
+    "#inicio-link, #conocimientos-link"
+  );
 
   // Agregar un controlador de eventos al enlace
   inicioLink.addEventListener("click", function () {
