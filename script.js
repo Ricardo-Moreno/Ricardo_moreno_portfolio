@@ -1,21 +1,26 @@
 function init() {
-  // Obtener el enlace "Inicio"
-  const inicioLink = document.querySelector(
-    "#inicio-link, #conocimientos-link"
-  );
-
-  // Agregar un controlador de eventos al enlace
+  const inicioLink = document.querySelector("#inicio-link");
   inicioLink.addEventListener("click", function () {
-    // Obtener el header
     const header = document.querySelector("header");
-
-    // Añadir la clase "scroll-header" para contraer el header
     header.classList.add("scroll-header");
 
-    // Obtener los elementos con la clase "header_2"
     const titleNames = document.getElementsByClassName("header_2");
+    for (let i = 0; i < titleNames.length; i++) {
+      titleNames[i].classList.add("titleNameNone");
+      titleNames[i].classList.remove("header_2");
+    }
 
-    // Añadir y eliminar las clases necesarias
+    const nav = document.querySelector("nav");
+    nav.classList.add("nav_scroll");
+    nav.classList.remove("nav");
+  });
+
+  const conocimientosLink = document.querySelector("#conocimientos-link");
+  conocimientosLink.addEventListener("click", function () {
+    const header = document.querySelector("header");
+    header.classList.add("scroll-header");
+
+    const titleNames = document.getElementsByClassName("header_2");
     for (let i = 0; i < titleNames.length; i++) {
       titleNames[i].classList.add("titleNameNone");
       titleNames[i].classList.remove("header_2");
@@ -55,13 +60,13 @@ function init() {
     }
   });
 
-  const links = document.querySelectorAll(".proyectos a,.a_card");
+  const links = document.querySelectorAll(".proyectos a,.a_card,.a_nav");
 
   links.forEach((link) => {
     link.setAttribute("target", "_blank");
   });
 
-  const navLinks = document.querySelectorAll("nav a");
+  const navLinks = document.querySelectorAll("a_nav");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", (event) => {

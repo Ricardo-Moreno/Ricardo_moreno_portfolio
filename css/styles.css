@@ -1,0 +1,1031 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #404042;
+}
+
+/** SECCION DEL HEADER**/
+
+header {
+  background-color: #29292b;
+  background-position: center;
+  height: 473px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 7px;
+}
+
+/* Ajustar la opacidad de la imagen de fondo */
+header::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  background-color: #313037;
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.scroll-header {
+  height: 50px;
+}
+
+.header_2 {
+  height: 300px;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.titleNameNone {
+  display: none;
+}
+
+/** SECCION DEL NABVAR**/
+
+nav {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.nav_scroll {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/*? SECCION LOGO DEL NAVBAR ?*/
+
+.logo_r {
+  width: 27px;
+  margin-left: 100px;
+}
+
+/*? SECCION RUTAS DEL NAVBAR ?*/
+
+.ul_nav {
+  display: flex;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.ul_li_scroll {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.a_nav {
+  color: white !important;
+  text-decoration: none !important;
+  font-weight: 400;
+  transition: font-size 0.2s ease-in-out;
+}
+
+a:hover {
+  font-size: 18px; /* Aumenta el tamaño de letra cuando el cursor está encima */
+}
+
+/** SECCION DE TITULO NOMBRE RICARDO MORENO**/
+
+.div_header_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 300px;
+}
+
+h1 {
+  font-size: 45px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.h1-scroll {
+  display: none;
+}
+
+h2 {
+  font-size: 35px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.h2-scroll {
+  display: none;
+}
+
+.h2_header_barra {
+  color: #f1dc7e;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.p_header_title {
+  color: white;
+}
+
+.a_header_title {
+  text-decoration: none;
+  text-decoration-style: none;
+  color: white;
+}
+
+.buttom_header {
+  background-color: #313037;
+  border: 2px solid #f1dc7e;
+  color: #f1dc7e;
+  padding: 5px;
+  margin-top: 10px;
+  /* font-size: 35; */
+  width: 130px;
+  height: 40px;
+}
+
+.buttom_header a {
+  all: unset;
+}
+
+/** SECCION DE FOTO HEADER**/
+
+.sec_foto {
+  margin: 0;
+  padding: 0;
+}
+
+.img_foto {
+  width: 250px;
+}
+
+/** SECCION DE FULL STACK DEVELOPER**/
+
+.h2_header {
+  font-size: 45px;
+}
+.h3_header {
+  font-size: 12px;
+  color: #f1dc7e;
+}
+
+.div_header {
+  width: 300px;
+  height: auto;
+  /* text-align: justify; */
+}
+
+.p_header {
+  color: white;
+  font-size: 16px;
+}
+
+.a_header_nav {
+  color: #f1dc7e;
+  font-size: 10px;
+  transition: font-size 0.5s ease-in-out;
+}
+
+.a_header_nav:hover {
+  color: white;
+}
+
+/** Elemento main **/
+
+main {
+  margin-top: 200px;
+}
+
+.sec_h2_cono {
+  display: flex;
+  justify-content: center;
+}
+
+.h2_cono {
+  color: #f1dc7e;
+  text-align: center;
+  font-size: 13px;
+}
+
+/** Seccion Sobre Mi **/
+
+.contenedor-seccion_sobre_mi {
+  background-color: #404042;
+}
+
+.sec_sobre_mi {
+  display: flex;
+  justify-content: center;
+}
+
+.div_sobre_mi {
+  margin: 60px 150px 100px 150px;
+  padding: 18px;
+  text-align: center;
+}
+
+.div_sobre_mi p {
+  color: white;
+}
+
+/** Seccion de Conocimientos Certificados **/
+
+#conocimientos {
+  background-color: #29292b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+  margin-top: 3px;
+}
+
+.div_conocimientos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.h3_conocimientos {
+  font-size: 35px;
+  color: white;
+  margin: 10px 30px 10px 0px;
+}
+
+.div_conocimientos p {
+  color: white;
+  font-size: 16px;
+  width: 700px;
+  text-align: center;
+}
+
+.sec_card {
+  display: flex;
+  height: auto;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.a_card * {
+  color: white;
+  text-decoration: none;
+}
+
+.card {
+  background-color: #29292b;
+  border-radius: 1px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 10px 60px 10px;
+  width: 280px;
+  height: 227px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+.card:hover {
+  box-shadow: 0 26px 32px rgba(0, 0, 0, 0.1);
+  width: 284px;
+  height: 230px;
+}
+
+.card h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+i {
+  font-size: 60px;
+  margin: auto;
+  padding: 0;
+  color: white;
+}
+
+/* cerfificados ul */
+
+.ul_certificados {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ul_certificados li {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/** Seccion de Proyectos **/
+
+#proyectos {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.proyectos {
+  margin-top: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a_proyectos {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .proyectos li {
+  flex-basis: 33.33%;
+  margin-bottom: 20px;
+} */
+
+.proyectos img {
+  width: 400px;
+  margin: 20px 0px 20px 0;
+}
+
+/* .proyectos .overlay {
+  margin-left: 20px;
+  margin-top: 50px;
+} */
+
+.proyectos .overlay h3 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  margin: 0px 0px 10px 0;
+}
+
+.proyectos .overlay p {
+  margin: 0;
+  color: white;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+}
+
+/* .proyectos a:hover .overlay {
+  opacity: 1;
+} */
+
+/** Seccion formulario **/
+
+#contacto {
+  background-color: #29292b;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/*? Estilos para los campos del formulario */
+
+.sec_form {
+  margin-top: 100px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+textarea {
+  height: 10rem;
+}
+
+/* Estilos para el botón de enviar */
+button[type="submit"] {
+  background-color: #f1dc7e;
+  color: #29292b;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #f1dc7e;
+}
+
+/** Seccion Foote **/
+
+footer {
+  width: 100%;
+  height: 200px;
+}
+
+/*! ------------------------------------------- phone ---------------------------------------------------------------//
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-width: 390px) and (max-width: 844px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #404042;
+  }
+
+  header {
+    background-color: #29292b;
+    background-position: center;
+    height: 473px;
+    position: absolute;
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    margin: 7px;
+  }
+
+  /* Ajustar la opacidad de la imagen de fondo */
+  header::before {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    background-color: #313037;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* Ajustar la opacidad de la imagen de fondo */
+
+  .scroll-header {
+    height: 473px;
+  }
+
+  .header_2 {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: end;
+    align-items: center;
+    /* margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px; */
+  }
+
+  .titleNameNone {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: end;
+    align-items: center;
+  }
+
+  /** SECCION DEL NABVAR**/
+
+  nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  .nav_scroll {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  /*? SECCION LOGO DEL NAVBAR ?*/
+
+  .logo_r {
+    display: none;
+  }
+
+  /*? SECCION RUTAS DEL NAVBAR ?*/
+
+  .ul_nav {
+    display: flex;
+    list-style: none;
+    margin-right: 5px;
+  }
+
+  .ul_li_scroll {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .a_nav {
+    font-size: 5px;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: 400;
+    transition: font-size 0.2s ease-in-out;
+  }
+
+  a:hover {
+    font-size: 5px; /* Aumenta el tamaño de letra cuando el cursor está encima */
+  }
+
+  /** SECCION DE TITULO NOMBRE RICARDO MORENO**/
+
+  .div_header_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 10px;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+
+  .h1-scroll {
+    display: none;
+  }
+
+  h2 {
+    font-size: 5px;
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+
+  .h2-scroll {
+    display: none;
+  }
+
+  .h2_header_barra {
+    color: #f1dc7e;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+
+  .p_header_title {
+    color: white;
+  }
+
+  .a_header_title {
+    text-decoration: none;
+    text-decoration-style: none;
+    color: white;
+  }
+
+  .buttom_header {
+    background-color: #313037;
+    border: 2px solid #f1dc7e;
+    color: #f1dc7e;
+    padding: 5px;
+    margin-top: 5px;
+    /* font-size: 35; */
+    width: 20px;
+    height: 5px;
+  }
+
+  .buttom_header a {
+    all: unset;
+  }
+
+  /** SECCION DE FOTO HEADER**/
+
+  .sec_foto {
+    margin: 0;
+    padding: 0;
+  }
+
+  .img_foto {
+    width: 50px;
+  }
+
+  /** SECCION DE FULL STACK DEVELOPER**/
+
+  .h2_header {
+    font-size: 5px;
+  }
+  .h3_header {
+    font-size: 5px;
+    color: #f1dc7e;
+  }
+
+  .div_header {
+    width: 100px;
+    height: auto;
+    /* text-align: justify; */
+  }
+
+  .p_header {
+    color: white;
+    font-size: 5px;
+  }
+
+  .a_header_nav {
+    color: #f1dc7e;
+    font-size: 5px;
+    transition: font-size 0.5s ease-in-out;
+  }
+
+  .a_header_nav:hover {
+    color: white;
+  }
+
+  /** Elemento main **/
+
+  main {
+    margin-top: 200px;
+  }
+
+  .sec_h2_cono {
+    display: flex;
+    justify-content: center;
+  }
+
+  .h2_cono {
+    color: #f1dc7e;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  /** Seccion Sobre Mi **/
+
+  .contenedor-seccion_sobre_mi {
+    background-color: #404042;
+  }
+
+  .sec_sobre_mi {
+    display: flex;
+    justify-content: center;
+  }
+
+  .div_sobre_mi {
+    margin: 60px 150px 100px 150px;
+    padding: 18px;
+    text-align: center;
+  }
+
+  .div_sobre_mi p {
+    color: white;
+  }
+
+  /** Seccion de Conocimientos Certificados **/
+
+  #conocimientos {
+    background-color: #29292b;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    margin-top: 3px;
+  }
+
+  .div_conocimientos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  .h3_conocimientos {
+    font-size: 35px;
+    color: white;
+    margin: 10px 30px 10px 0px;
+  }
+
+  .div_conocimientos p {
+    color: white;
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+  }
+
+  .sec_card {
+    display: flex;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .a_card * {
+    color: white;
+    text-decoration: none;
+  }
+
+  .card {
+    background-color: #29292b;
+    border-radius: 1px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px 60px 10px;
+    width: 80px;
+    height: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 26px 32px rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 30px;
+  }
+
+  .card h4 {
+    font-size: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .card p {
+    font-size: 5px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  i {
+    font-size: 5px;
+    margin: auto;
+    padding: 0;
+    color: white;
+  }
+
+  /* cerfificados ul */
+
+  .ul_certificados {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ul_certificados li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /** Seccion de Proyectos **/
+
+  #proyectos {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .proyectos {
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .a_proyectos {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .proyectos li {
+  flex-basis: 33.33%;
+  margin-bottom: 20px;
+} */
+
+  .proyectos img {
+    width: 50px;
+    margin: 5px 0px 5px 0;
+  }
+
+  /* .proyectos .overlay {
+  margin-left: 20px;
+  margin-top: 50px;
+} */
+
+  .proyectos .overlay h3 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    margin: 0px 0px 10px 0;
+  }
+
+  .proyectos .overlay p {
+    margin: 0;
+    color: white;
+    text-align: center;
+    margin: 0px 5px 0px 5px;
+  }
+
+  /* .proyectos a:hover .overlay {
+  opacity: 1;
+} */
+
+  /** Seccion formulario **/
+
+  #contacto {
+    background-color: #29292b;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #contact-form {
+    max-width: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*? Estilos para los campos del formulario */
+
+  .sec_form {
+    margin-top: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 0.2rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.2rem;
+    color: white;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+    font-size: 0.1rem;
+    width: 100%;
+  }
+
+  textarea {
+    height: 10rem;
+  }
+
+  /* Estilos para el botón de enviar */
+  button[type="submit"] {
+    background-color: #f1dc7e;
+    color: #29292b;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #f1dc7e;
+  }
+
+  /** Seccion Foote **/
+
+  footer {
+    width: 100%;
+    height: 200px;
+  }
+  /* Estilos para pantallas de smartphones */
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para pantallas de tablets */
+}
+
+/* Pantallas pequeñas de escritorio y tablets en landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Estilos para pantallas de tablets en landscape y pantallas pequeñas de escritorio */
+}
+
+/* Pantallas grandes de escritorio */
+@media only screen and (min-width: 1025px) {
+  /* Estilos para pantallas grandes de escritorio */
+}
+
+/* Pantallas de televisión */
+@media only screen and (min-width: 1920px) {
+  /* Estilos para pantallas de televisión */
+}
