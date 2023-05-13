@@ -499,7 +499,7 @@ footer {
   height: 200px;
 }
 
-/*! ------------------------------------------- phone ---------------------------------------------------------------//
+/*!-----------------------------------------phone---------------------------------------------------------------// 
 
 /* Smartphones (portrait and landscape) */
 @media only screen and (min-width: 390px) and (max-width: 844px) {
@@ -518,7 +518,7 @@ footer {
   header {
     background-color: #29292b;
     background-position: center;
-    height: 473px;
+    height: 620px;
     position: absolute;
     /* top: 0; */
     /* left: 0; */
@@ -533,7 +533,7 @@ footer {
     height: 100%;
     opacity: 0.5;
     z-index: -1;
-    background-color: #313037;
+    background-color: #29292b;
     background-size: cover;
     background-position: center;
     position: fixed;
@@ -545,15 +545,22 @@ footer {
   /* Ajustar la opacidad de la imagen de fondo */
 
   .scroll-header {
-    height: 473px;
+    background-color: #29292b;
+    background-position: center;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 7px;
   }
 
   .header_2 {
-    height: 300px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     padding: 0;
-    justify-content: end;
+    justify-content: space-around;
     align-items: center;
     /* margin-top: 50px;
     margin-left: 70px;
@@ -561,11 +568,11 @@ footer {
   }
 
   .titleNameNone {
-    height: 300px;
+    height: 500px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     padding: 0;
-    justify-content: end;
     align-items: center;
   }
 
@@ -616,7 +623,7 @@ footer {
   }
 
   .a_nav {
-    font-size: 5px;
+    font-size: 12px;
     color: white !important;
     text-decoration: none !important;
     font-weight: 400;
@@ -624,7 +631,7 @@ footer {
   }
 
   a:hover {
-    font-size: 5px; /* Aumenta el tamaño de letra cuando el cursor está encima */
+    font-size: 13px; /* Aumenta el tamaño de letra cuando el cursor está encima */
   }
 
   /** SECCION DE TITULO NOMBRE RICARDO MORENO**/
@@ -632,13 +639,13 @@ footer {
   .div_header_title {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
   }
 
   h1 {
-    font-size: 10px;
+    font-size: 35px;
     color: white;
     padding: 0;
     margin: 0;
@@ -649,7 +656,7 @@ footer {
   }
 
   h2 {
-    font-size: 5px;
+    font-size: 30px;
     color: white;
     padding: 0;
     margin: 0;
@@ -662,7 +669,8 @@ footer {
   .h2_header_barra {
     color: #f1dc7e;
     padding: 0;
-    margin-bottom: 5px;
+    margin-bottom: 1px;
+    font-size: 20px;
   }
 
   .p_header_title {
@@ -673,17 +681,19 @@ footer {
     text-decoration: none;
     text-decoration-style: none;
     color: white;
+    font-size: 13px;
   }
 
   .buttom_header {
     background-color: #313037;
     border: 2px solid #f1dc7e;
     color: #f1dc7e;
-    padding: 5px;
+    padding: 2px;
     margin-top: 5px;
-    /* font-size: 35; */
-    width: 20px;
-    height: 5px;
+    margin-bottom: 15px;
+    font-size: 10px;
+    width: 100px;
+    height: 30px;
   }
 
   .buttom_header a {
@@ -698,44 +708,56 @@ footer {
   }
 
   .img_foto {
-    width: 50px;
+    width: 120px;
   }
 
   /** SECCION DE FULL STACK DEVELOPER**/
 
+  .div_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
   .h2_header {
-    font-size: 5px;
+    font-size: 20px;
   }
   .h3_header {
-    font-size: 5px;
+    font-size: 10px;
     color: #f1dc7e;
+    margin-top: 10px;
   }
 
   .div_header {
-    width: 100px;
+    width: 300px;
     height: auto;
-    /* text-align: justify; */
+    text-align: center;
   }
 
   .p_header {
     color: white;
-    font-size: 5px;
+    font-size: 10px;
+    width: 300px;
+    text-align: center;
   }
 
   .a_header_nav {
     color: #f1dc7e;
-    font-size: 5px;
+    font-size: 15px;
     transition: font-size 0.5s ease-in-out;
   }
 
   .a_header_nav:hover {
     color: white;
+    font-size: 15px;
   }
 
   /** Elemento main **/
 
   main {
-    margin-top: 200px;
+    margin-top: 600px;
   }
 
   .sec_h2_cono {
@@ -753,16 +775,17 @@ footer {
 
   .contenedor-seccion_sobre_mi {
     background-color: #404042;
+    width: 300px;
+    text-align: center;
   }
 
   .sec_sobre_mi {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .div_sobre_mi {
-    margin: 60px 150px 100px 150px;
-    padding: 18px;
     text-align: center;
   }
 

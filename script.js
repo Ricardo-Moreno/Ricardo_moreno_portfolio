@@ -1,62 +1,67 @@
 function init() {
+  const isMobile = window.innerWidth <= 850;
+
   const inicioLink = document.querySelector("#inicio-link");
   inicioLink.addEventListener("click", function () {
-    const header = document.querySelector("header");
-    header.classList.add("scroll-header");
+    if (!isMobile) {
+      const header = document.querySelector("header");
+      header.classList.add("scroll-header");
 
-    const titleNames = document.getElementsByClassName("header_2");
-    for (let i = 0; i < titleNames.length; i++) {
-      titleNames[i].classList.add("titleNameNone");
-      titleNames[i].classList.remove("header_2");
-    }
-
-    const nav = document.querySelector("nav");
-    nav.classList.add("nav_scroll");
-    nav.classList.remove("nav");
-  });
-
-  const conocimientosLink = document.querySelector("#conocimientos-link");
-  conocimientosLink.addEventListener("click", function () {
-    const header = document.querySelector("header");
-    header.classList.add("scroll-header");
-
-    const titleNames = document.getElementsByClassName("header_2");
-    for (let i = 0; i < titleNames.length; i++) {
-      titleNames[i].classList.add("titleNameNone");
-      titleNames[i].classList.remove("header_2");
-    }
-
-    // Obtener la barra de navegación
-    const nav = document.querySelector("nav");
-
-    // Añadir y eliminar las clases necesarias
-    nav.classList.add("nav_scroll");
-    nav.classList.remove("nav");
-  });
-
-  document.addEventListener("scroll", function () {
-    var scrollPosition = window.scrollY;
-
-    if (scrollPosition > 100) {
-      document.querySelector("header").classList.add("scroll-header");
       const titleNames = document.getElementsByClassName("header_2");
       for (let i = 0; i < titleNames.length; i++) {
         titleNames[i].classList.add("titleNameNone");
         titleNames[i].classList.remove("header_2");
       }
+
       const nav = document.querySelector("nav");
       nav.classList.add("nav_scroll");
       nav.classList.remove("nav");
-    } else {
-      document.querySelector("header").classList.remove("scroll-header");
-      const titleNames = document.getElementsByClassName("titleNameNone");
+    }
+  });
+
+  const conocimientosLink = document.querySelector("#conocimientos-link");
+  conocimientosLink.addEventListener("click", function () {
+    if (!isMobile) {
+      const header = document.querySelector("header");
+      header.classList.add("scroll-header");
+
+      const titleNames = document.getElementsByClassName("header_2");
       for (let i = 0; i < titleNames.length; i++) {
-        titleNames[i].classList.add("header_2");
-        titleNames[i].classList.remove("titleNameNone");
+        titleNames[i].classList.add("titleNameNone");
+        titleNames[i].classList.remove("header_2");
       }
+
       const nav = document.querySelector("nav");
       nav.classList.add("nav_scroll");
       nav.classList.remove("nav");
+    }
+  });
+
+  document.addEventListener("scroll", function () {
+    if (!isMobile) {
+      var scrollPosition = window.scrollY;
+
+      if (scrollPosition > 100) {
+        document.querySelector("header").classList.add("scroll-header");
+        const titleNames = document.getElementsByClassName("header_2");
+        for (let i = 0; i < titleNames.length; i++) {
+          titleNames[i].classList.add("titleNameNone");
+          titleNames[i].classList.remove("header_2");
+        }
+        const nav = document.querySelector("nav");
+        nav.classList.add("nav_scroll");
+        nav.classList.remove("nav");
+      } else {
+        document.querySelector("header").classList.remove("scroll-header");
+        const titleNames = document.getElementsByClassName("titleNameNone");
+        for (let i = 0; i < titleNames.length; i++) {
+          titleNames[i].classList.add("header_2");
+          titleNames[i].classList.remove("titleNameNone");
+        }
+        const nav = document.querySelector("nav");
+        nav.classList.add("nav_scroll");
+        nav.classList.remove("nav");
+      }
     }
   });
 
@@ -81,4 +86,5 @@ function init() {
 }
 
 document.addEventListener("DOMContentLoaded", init);
+
 window.addEventListener("load", init);
