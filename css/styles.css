@@ -404,7 +404,7 @@ i {
 } */
 
 .proyectos img {
-  width: 400px;
+  width: 600px;
   margin: 20px 0px 20px 0;
 }
 
@@ -496,7 +496,7 @@ button[type="submit"]:hover {
 
 footer {
   width: 100%;
-  height: 200px;
+  height: 50px;
 }
 
 /*!-----------------------------------------phone---------------------------------------------------------------// 
@@ -1029,7 +1029,7 @@ footer {
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 0.5rem;
-    font-size: 0.1rem;
+    font-size: 15px;
     width: 100%;
   }
 
@@ -1043,7 +1043,7 @@ footer {
     color: #29292b;
     padding: 0.5rem 1rem;
     border: none;
-    font-size: 1.2rem;
+    font-size: 15px;
     font-weight: 500;
     cursor: pointer;
   }
@@ -1056,7 +1056,7 @@ footer {
 
   footer {
     width: 100%;
-    height: 200px;
+    height: 50px;
   }
   /* Estilos para pantallas de smartphones */
 }
