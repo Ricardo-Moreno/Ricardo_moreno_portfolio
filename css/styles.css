@@ -135,14 +135,6 @@ h1 {
   margin: 0;
 }
 
-.h2_title_mobile {
-  font-size: 40px;
-  color: white;
-  padding: 0;
-  margin: 0;
-  display: none;
-}
-
 .h1-scroll {
   display: none;
 }
@@ -652,19 +644,11 @@ footer {
     width: 360px;
   }
 
-  .h2_title_mobile {
-    font-size: 10px;
-    color: white;
-    padding: 0;
-    margin: 0;
-  }
-
   h1 {
-    font-size: 45px;
+    font-size: 48px;
     color: white;
     padding: 0;
     margin: 0;
-    /* display: none; */
   }
 
   .h1-scroll {
@@ -672,11 +656,10 @@ footer {
   }
 
   .h2_title {
-    font-size: 42px;
+    font-size: 38px;
     color: white;
     padding: 0;
     margin: 0;
-    /* display: none; */
   }
 
   .h2-scroll {
@@ -851,8 +834,10 @@ footer {
     font-size: 15px;
     width: 100%;
     text-align: center;
-    padding: 5px;
-    margin-bottom: 60px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
   }
 
   .sec_card {
