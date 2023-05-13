@@ -88,17 +88,3 @@ function init() {
 document.addEventListener("DOMContentLoaded", init);
 
 window.addEventListener("load", init);
-
-// // Selecciona el elemento h1
-const h1 = document.querySelector("h1");
-
-if (window.matchMedia) {
-  const mediaQuery = window.matchMedia("(max-width: 844px)");
-  mediaQuery.addListener(function () {
-    if (mediaQuery.matches) {
-      h1.textContent = "RICARDO MORENO";
-    } else {
-      h1.textContent = "RICARDO";
-    }
-  });
-}

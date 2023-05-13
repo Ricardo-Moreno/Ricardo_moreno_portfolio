@@ -135,6 +135,14 @@ h1 {
   margin: 0;
 }
 
+.h2_title_mobile {
+  font-size: 40px;
+  color: white;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
 .h1-scroll {
   display: none;
 }
@@ -623,7 +631,7 @@ footer {
   }
 
   .a_nav {
-    font-size: 15px;
+    font-size: 14px;
     color: white !important;
     text-decoration: none !important;
     font-weight: 400;
@@ -641,14 +649,22 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 360px;
   }
 
-  h1 {
-    font-size: 40px;
+  .h2_title_mobile {
+    font-size: 10px;
     color: white;
     padding: 0;
     margin: 0;
+  }
+
+  h1 {
+    font-size: 45px;
+    color: white;
+    padding: 0;
+    margin: 0;
+    /* display: none; */
   }
 
   .h1-scroll {
@@ -656,11 +672,11 @@ footer {
   }
 
   .h2_title {
-    font-size: 37px;
+    font-size: 42px;
     color: white;
     padding: 0;
     margin: 0;
-    display: none;
+    /* display: none; */
   }
 
   .h2-scroll {
@@ -676,6 +692,7 @@ footer {
 
   .p_header_title {
     color: white;
+    display: none;
   }
 
   .a_header_title {
@@ -683,6 +700,7 @@ footer {
     text-decoration-style: none;
     color: white;
     font-size: 13px;
+    display: none;
   }
 
   .buttom_header {
@@ -709,7 +727,7 @@ footer {
   }
 
   .img_foto {
-    width: 120px;
+    width: 150px;
   }
 
   /** SECCION DE FULL STACK DEVELOPER**/
@@ -723,10 +741,10 @@ footer {
   }
 
   .h2_header {
-    font-size: 35px;
+    font-size: 40px;
   }
   .h3_header {
-    font-size: 10px;
+    font-size: 15px;
     color: #f1dc7e;
     margin-top: 10px;
   }
@@ -762,6 +780,7 @@ footer {
 
   main {
     margin-top: 600px;
+    padding: 0;
   }
 
   .sec_h2_cono {
@@ -772,35 +791,40 @@ footer {
   .h2_cono {
     color: #f1dc7e;
     text-align: center;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   /** Seccion Sobre Mi **/
 
   .contenedor-seccion_sobre_mi {
     background-color: #404042;
-    width: 300px;
-    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 
   .sec_sobre_mi {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .div_sobre_mi {
+    width: 300px;
     text-align: center;
   }
 
   .div_sobre_mi p {
     color: white;
+    font-size: 20px;
   }
 
   /** Seccion de Conocimientos Certificados **/
 
   #conocimientos {
     background-color: #29292b;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -824,9 +848,11 @@ footer {
 
   .div_conocimientos p {
     color: white;
-    font-size: 16px;
-    width: 100px;
+    font-size: 15px;
+    width: 100%;
     text-align: center;
+    padding: 5px;
+    margin-bottom: 60px;
   }
 
   .sec_card {
@@ -849,12 +875,13 @@ footer {
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px 10px 60px 10px;
-    width: 80px;
-    height: 27px;
+    width: 160px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     transition: background-color 0.5s ease;
   }
 
@@ -865,19 +892,19 @@ footer {
   }
 
   .card h4 {
-    font-size: 5px;
+    font-size: 20px;
     margin-bottom: 5px;
     text-align: center;
   }
 
   .card p {
-    font-size: 5px;
+    font-size: 15px;
     line-height: 1.5;
     text-align: center;
   }
 
   i {
-    font-size: 5px;
+    font-size: 50px;
     margin: auto;
     padding: 0;
     color: white;
@@ -902,6 +929,14 @@ footer {
     margin: 0;
     padding: 0;
   }
+  
+  .li_certificado_mobile {
+    display: none;
+  }
+
+  .li_certificado {
+    color: #f1dc7e;
+  }
 
   /** Seccion de Proyectos **/
 
@@ -911,11 +946,13 @@ footer {
   }
 
   .proyectos {
+    height: auto;
     margin-top: 10px;
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   .a_proyectos {
@@ -940,8 +977,8 @@ footer {
 } */
 
   .proyectos img {
-    width: 50px;
-    margin: 5px 0px 5px 0;
+    width: 350px;
+    margin: 5px 0px 25px 5px;
   }
 
   /* .proyectos .overlay {
@@ -953,14 +990,15 @@ footer {
     margin: 0;
     color: white;
     text-align: center;
-    margin: 0px 0px 10px 0;
+    margin: 0px 0px 20px 10px;
+    font-size: 25px;
   }
 
   .proyectos .overlay p {
     margin: 0;
     color: white;
     text-align: center;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 5px 20px 15px;
   }
 
   /* .proyectos a:hover .overlay {
@@ -976,7 +1014,8 @@ footer {
   }
 
   #contact-form {
-    max-width: 100px;
+    width: 100%;
+    padding: 20px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -1035,24 +1074,3 @@ footer {
     height: 200px;
   }
   /* Estilos para pantallas de smartphones */
-}
-
-/* Tablets (portrait and landscape) */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* Estilos para pantallas de tablets */
-}
-
-/* Pantallas pequeñas de escritorio y tablets en landscape */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* Estilos para pantallas de tablets en landscape y pantallas pequeñas de escritorio */
-}
-
-/* Pantallas grandes de escritorio */
-@media only screen and (min-width: 1025px) {
-  /* Estilos para pantallas grandes de escritorio */
-}
-
-/* Pantallas de televisión */
-@media only screen and (min-width: 1920px) {
-  /* Estilos para pantallas de televisión */
-}
