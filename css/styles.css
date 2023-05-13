@@ -618,12 +618,12 @@ footer {
   }
 
   li {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 4px;
+    margin-right: 4px;
   }
 
   .a_nav {
-    font-size: 12px;
+    font-size: 15px;
     color: white !important;
     text-decoration: none !important;
     font-weight: 400;
@@ -631,7 +631,7 @@ footer {
   }
 
   a:hover {
-    font-size: 13px; /* Aumenta el tamaño de letra cuando el cursor está encima */
+    font-size: 15px; /* Aumenta el tamaño de letra cuando el cursor está encima */
   }
 
   /** SECCION DE TITULO NOMBRE RICARDO MORENO**/
@@ -645,7 +645,7 @@ footer {
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 40px;
     color: white;
     padding: 0;
     margin: 0;
@@ -655,11 +655,12 @@ footer {
     display: none;
   }
 
-  h2 {
-    font-size: 30px;
+  .h2_title {
+    font-size: 37px;
     color: white;
     padding: 0;
     margin: 0;
+    display: none;
   }
 
   .h2-scroll {
@@ -722,7 +723,7 @@ footer {
   }
 
   .h2_header {
-    font-size: 20px;
+    font-size: 35px;
   }
   .h3_header {
     font-size: 10px;
@@ -737,21 +738,24 @@ footer {
   }
 
   .p_header {
-    color: white;
+    /* color: white;
     font-size: 10px;
     width: 300px;
-    text-align: center;
+    text-align: center; */
+    display: none;
   }
 
   .a_header_nav {
     color: #f1dc7e;
     font-size: 15px;
     transition: font-size 0.5s ease-in-out;
+    display: none;
   }
 
   .a_header_nav:hover {
     color: white;
     font-size: 15px;
+    display: none;
   }
 
   /** Elemento main **/
