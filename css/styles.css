@@ -377,7 +377,7 @@ i {
 .proyectos {
   margin-top: 40px;
   list-style: none;
-  display: flex;
+  display: flex-wrap;
   justify-content: center;
   align-items: center;
 }
@@ -398,20 +398,11 @@ i {
   justify-content: center;
   align-items: center;
 }
-/* .proyectos li {
-  flex-basis: 33.33%;
-  margin-bottom: 20px;
-} */
 
 .proyectos img {
   width: 600px;
   margin: 20px 0px 20px 0;
 }
-
-/* .proyectos .overlay {
-  margin-left: 20px;
-  margin-top: 50px;
-} */
 
 .proyectos .overlay h3 {
   margin: 0;
@@ -426,10 +417,6 @@ i {
   text-align: center;
   margin: 0px 10px 0px 10px;
 }
-
-/* .proyectos a:hover .overlay {
-  opacity: 1;
-} */
 
 /** Seccion formulario **/
 
@@ -477,7 +464,6 @@ textarea {
   height: 10rem;
 }
 
-/* Estilos para el botón de enviar */
 button[type="submit"] {
   background-color: #f1dc7e;
   color: #29292b;
@@ -520,13 +506,9 @@ footer {
     background-position: center;
     height: 620px;
     position: absolute;
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
     margin: 7px;
   }
 
-  /* Ajustar la opacidad de la imagen de fondo */
   header::before {
     display: block;
     width: 100%;
@@ -541,8 +523,6 @@ footer {
     left: 0;
     right: 0;
   }
-
-  /* Ajustar la opacidad de la imagen de fondo */
 
   .scroll-header {
     background-color: #29292b;
@@ -562,9 +542,6 @@ footer {
     padding: 0;
     justify-content: space-around;
     align-items: center;
-    /* margin-top: 50px;
-    margin-left: 70px;
-    margin-right: 70px; */
   }
 
   .titleNameNone {
@@ -631,7 +608,7 @@ footer {
   }
 
   a:hover {
-    font-size: 15px; /* Aumenta el tamaño de letra cuando el cursor está encima */
+    font-size: 15px;
   }
 
   /** SECCION DE TITULO NOMBRE RICARDO MORENO**/
@@ -739,10 +716,6 @@ footer {
   }
 
   .p_header {
-    /* color: white;
-    font-size: 10px;
-    width: 300px;
-    text-align: center; */
     display: none;
   }
 
@@ -956,20 +929,11 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  /* .proyectos li {
-  flex-basis: 33.33%;
-  margin-bottom: 20px;
-} */
 
   .proyectos img {
     width: 350px;
     margin: 5px 0px 25px 5px;
   }
-
-  /* .proyectos .overlay {
-  margin-left: 20px;
-  margin-top: 50px;
-} */
 
   .proyectos .overlay h3 {
     margin: 0;
@@ -985,10 +949,6 @@ footer {
     text-align: center;
     margin: 0px 5px 20px 15px;
   }
-
-  /* .proyectos a:hover .overlay {
-  opacity: 1;
-} */
 
   /** Seccion formulario **/
 
@@ -1029,7 +989,7 @@ footer {
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 0.5rem;
-    font-size: 15px;
+    font-size: 20px;
     width: 100%;
   }
 
@@ -1037,13 +997,12 @@ footer {
     height: 10rem;
   }
 
-  /* Estilos para el botón de enviar */
   button[type="submit"] {
     background-color: #f1dc7e;
     color: #29292b;
     padding: 0.5rem 1rem;
     border: none;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
   }
@@ -1058,5 +1017,4 @@ footer {
     width: 100%;
     height: 50px;
   }
-  /* Estilos para pantallas de smartphones */
 }
