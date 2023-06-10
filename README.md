@@ -1,4 +1,4 @@
-                                                         Porfolio Ricardo Moreno
+                                                         Portfolio Ricardo Moreno
 
 Portfolio personal, una página web creada utilizando HTML, CSS y JavaScript. Mi portfolio muestra mi experiencia, habilidades y proyectos destacados. 
 Con un diseño elegante y moderno, mi objetivo es presentar de manera efectiva mi trabajo y capturar la atención de los visitantes. A través de una combinación
